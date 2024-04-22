@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-export const PrintHello = () => {
+const PrintHello = () => {
 	return <h1>I Love React</h1>;
 };
 
 // Change the syntax of the first parameter to make it <PrintHello /> instead of PrintHello()
-ReactDOM.render(PrintHello(), document.querySelector("#myDiv"));
+ReactDOM.render(<PrintHello />, document.querySelector("#myDiv"));
